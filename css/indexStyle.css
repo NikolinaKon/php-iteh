@@ -10,6 +10,7 @@ body{
     background-size: cover;
 }
 .navbar{
+    font-family: Georgia, 'Times New Roman', Times, serif;
     position: fixed;
     margin-top: 0px;
     background-color: rgb(216, 198, 144);

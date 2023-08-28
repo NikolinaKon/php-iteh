@@ -51,7 +51,7 @@ if(isset($_SESSION['user'])){
       <button onclick="dodajUKorpu('Riba')">Dodaj u korpu</button>
     </div>
     <div class="product">
-      <img src="img/zdravaSalata1.png" alt="Salata">
+      <img src="img/zdravaSalata22.png" alt="Salata">
       <h2>Avokado salata</h2>
       <p>cena: 470,00 din</p>
       <button onclick="dodajUKorpu('Salata')">Dodaj u korpu</button>
