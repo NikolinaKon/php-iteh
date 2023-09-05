@@ -12,7 +12,7 @@ if(isset($_SESSION['user'])){
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title> Niki's </title>
+        <title>Niki's|About us</title>
         <link rel="stylesheet" href="css/indexStyle.css">
         <style>
             .navbar ul li a{

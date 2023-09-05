@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title> Niki's </title>
+        <title> Niki's|LogIn </title>
         <link rel="stylesheet" href="css/prijavaStyle.css">
     </head>
     <body>

@@ -12,7 +12,7 @@ if(isset($_SESSION['user'])){
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Baki SHOP</title>
+        <title>Niki's|Home</title>
         <link rel="stylesheet" href="css/indexStyle.css">
     </head>
     <body>
@@ -39,7 +39,6 @@ if(isset($_SESSION['user'])){
                     <a href="prijava.php"><button class="dugmePrijava">Prijavite se</button></a>
                 </div>
                 <div class="col-2">
-                    <img src="img/sf.png">
                 </div>
             </div>
         </div>

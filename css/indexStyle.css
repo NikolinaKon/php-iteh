@@ -8,6 +8,8 @@ body{
     background-image: url("https://blog-images-1.pharmeasy.in/blog/production/wp-content/uploads/2021/01/25180542/shutterstock_1545283778-1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
+    
 }
 .navbar{
     font-family: Georgia, 'Times New Roman', Times, serif;
