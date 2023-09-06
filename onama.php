@@ -88,6 +88,7 @@ if(isset($_SESSION['user'])){
                 <label for="korId"><b>Korisnikov ID:</b></label>
                 <input type="number" class="form-control" id="korId" name="korId" required>
             </div>
+            
             <button type="submit" class="btn btn-primary" name="submitbtn" id="submitbtn">Potvrdi</button>
             <button class="btn btn-primary" name="deletebtn" id="deletebtn" onclick="obrisiKomentare();">Obriši komentare</button>
         </form>
@@ -128,7 +129,7 @@ if(isset($_SESSION['user'])){
         $stmt = $mysqli->prepare("SELECT * FROM komentari");
         $stmt->execute();
 
-        $stmt->bind_result($naziv, $cena, $opis, $korId);
+        $stmt->bind_result($naziv, $cena, $opis, $korId,$datum);
         
         include "klase/koment.php";
         $kom = new Komentar();
@@ -136,6 +137,8 @@ if(isset($_SESSION['user'])){
         $kom->setCena($cena);
         $kom->setOpis($opis);
         $kom->setKorId($korId);
+        $kom->setDatum($datum);
+        
 
         echo "<table id='tblKomentari'>";
         echo "<tr>";
@@ -143,6 +146,7 @@ if(isset($_SESSION['user'])){
         echo "<th>Cena</th>";
         echo "<th>Komentar</th>";
         echo "<th>Korisnikov ID</th>";
+        echo "<th>Datum</th>";
         echo "</tr>";
 
         while($stmt->fetch()){
@@ -151,11 +155,13 @@ if(isset($_SESSION['user'])){
             $kom->setCena($cena);
             $kom->setOpis($opis);
             $kom->setKorId($korId);
+            $kom->setDatum($datum);
             echo "<tr>";
             echo "<td>".$kom->getNaziv()."</td>";
             echo "<td>".$kom->getCena()."</td>";
             echo "<td>".$kom->getOpis()."</td>";
             echo "<td>".$kom->getKorId()."</td>";
+            echo "<td>".$kom->getDatum()."</td>";
             echo "</tr>";
         }
 

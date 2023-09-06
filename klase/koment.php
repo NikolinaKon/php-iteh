@@ -5,6 +5,7 @@ class Komentar {
     private $cena;
     private $opis;
     private $korId;
+    private $datum;
   
     public function getNaziv() {
       return $this->naziv;
@@ -12,6 +13,14 @@ class Komentar {
   
     public function setNaziv($naziv) {
       $this->naziv = $naziv;
+    }
+  
+    public function getDatum() {
+      return $this->datum;
+    }
+  
+    public function setDatum($datum) {
+      $this->datum = $datum;
     }
   
     public function getCena() {
